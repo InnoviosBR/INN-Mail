@@ -1,0 +1,39 @@
+Tabela ZP5 (CCC) -> NOTIFICACOES                  
+01 |ZP5_FILIAL |C |U |  |  2 |  0 |Filial       |Filial do Sistema         |@!                                            |       |                                   |033 - Tamanho da Filial              | | |* Campo não usado |
+02 |ZP5_ID     |C |U |R |  6 |  0 |ID           |                          |                                              |       |                                   |                                     | | |
+03 |ZP5_USUARI |C |U |R |  6 |  0 |Usuario      |                          |                                              |       |                                   |                                     | | |
+04 |ZP5_EMAIL  |C |U |R |254 |  0 |Email        |                          |                                              |       |                                   |                                     | | |
+05 |ZP5_EMAILM |M |U |R | 10 |  0 |Email        |Email                     |                                              |       |                                   |                                     | | |
+06 |ZP5_URL    |C |U |R |100 |  0 |URL          |                          |                                              |       |                                   |                                     | | |
+07 |ZP5_ASSUNT |C |U |R |100 |  0 |Assunto      |                          |                                              |       |                                   |                                     | | |
+08 |ZP5_TEXTO  |M |U |R | 10 |  0 |Texto        |                          |                                              |       |                                   |                                     | | |
+09 |ZP5_DATA   |D |U |R |  8 |  0 |Data         |                          |                                              |       |                                   |                                     | | |
+10 |ZP5_HORA   |C |U |R | 12 |  0 |Hora         |                          |                                              |       |                                   |                                     | | |
+11 |ZP5_ORIGEM |C |U |R |100 |  0 |Origem       |                          |                                              |       |                                   |                                     | | |
+12 |ZP5_STAMAI |C |U |R |  1 |  0 |Status Mail  |                          |                                              |       |                                   |                                     | |0=Aguardando;1=Enviado;3=Erro;4=Omitido |
+13 |ZP5_DTMAIL |D |U |R |  8 |  0 |Data Mail    |                          |                                              |       |                                   |                                     | | |
+14 |ZP5_HRMAIL |C |U |R | 12 |  0 |Hora Mail    |                          |                                              |       |                                   |                                     | | |
+15 |ZP5_STAPW  |C |U |R |  1 |  0 |Status PW    |                          |                                              |       |                                   |                                     | |0=Aguardando;1=Exibido;2=Lido |
+16 |ZP5_DTPW   |D |U |R |  8 |  0 |Data PW      |                          |                                              |       |                                   |                                     | | |
+17 |ZP5_HRPW   |C |U |R | 12 |  0 |Hora PW      |                          |                                              |       |                                   |                                     | | |
+18 |ZP5_ANEXO  |M |U |R | 10 |  0 |Anexos       |Anexos                    |                                              |       |                                   |                                     | | |
+19 |ZP5_LOOP   |N |U |R |  3 |  0 |N Tentativas |Numero Tentativas         |@E 999                                        |       |                                   |                                     | | |
+20 |ZP5_LOG    |M |U |R | 10 |  0 |Log          |Log                       |                                              |       |                                   |                                     | | |
+21 |ZP5_CHAVE  |C |U |R | 32 |  0 |Chave        |Chave                     |                                              |       |                                   |                                     | | |
+22 |ZP5_MSFIL  |C |L |R |  2 |  0 |Filial de In |Filial de Inclusao        |                                              |       |                                   |033 - Tamanho da Filial              | | |* Campo não usado |
+23 |ZP5_CONTA  |C |U |R | 20 |  0 |Cx Correio   |Caixa de correio          |                                              |       |                                   |                                     | | |
+
+Indice
+1 |ZP5_FILIAL+ZP5_ID |ID | |
+2 |ZP5_FILIAL+ZP5_USUARI |Usuario | |
+3 |ZP5_FILIAL+ZP5_CHAVE |Chave | |
+4 |ZP5_FILIAL+ZP5_CONTA |Cx Correio | |
+
+Gatilho
+nenhum
+
+Chave unica
+
+
+Vinculos
+
